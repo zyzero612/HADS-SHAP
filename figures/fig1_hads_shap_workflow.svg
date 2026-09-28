@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="675" viewBox="0 0 1000 675" role="img" aria-label="HADS-SHAP workflow">
+  <title>HADS-SHAP workflow</title>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#81949A"/>
+    </marker>
+    <style>
+      .card { fill:#EAF2F6; stroke:#B4CDD7; stroke-width:1.5; }
+      .group { fill:#EAF2F6; stroke:#B4CDD7; stroke-width:1.5; }
+      .mass { fill:#E8EFF5; stroke:#A8C1D2; stroke-width:1.5; }
+      .allocation { fill:#E8F3F0; stroke:#A7C9C1; stroke-width:1.5; }
+      .result { fill:#F2F5F5; stroke:#B8C9C9; stroke-width:1.5; }
+      .label { font:600 25px Arial,Helvetica,sans-serif; fill:#27424D; }
+      .arrow { fill:none; stroke:#81949A; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1000" height="675" fill="white"/>
+
+  <rect x="275" y="26" width="450" height="68" rx="18" class="card"/>
+  <text x="500" y="69" text-anchor="middle" class="label">Define environments and fit model</text>
+  <path d="M500 94 V122" class="arrow"/>
+
+  <rect x="275" y="128" width="450" height="68" rx="18" class="card"/>
+  <text x="500" y="171" text-anchor="middle" class="label">Compute SHAP with fixed model</text>
+  <path d="M500 196 V224" class="arrow"/>
+
+  <rect x="240" y="230" width="520" height="68" rx="18" class="group"/>
+  <text x="500" y="273" text-anchor="middle" class="label">Group features and aggregate attribution</text>
+  <path d="M500 298 V330 H270 V357" class="arrow"/>
+  <path d="M500 298 V330 H730 V357" class="arrow"/>
+
+  <rect x="70" y="363" width="400" height="68" rx="18" class="mass"/>
+  <text x="270" y="406" text-anchor="middle" class="label">Group attribution share M</text>
+  <rect x="530" y="363" width="400" height="68" rx="18" class="allocation"/>
+  <text x="730" y="406" text-anchor="middle" class="label">Within-group allocation q</text>
+  <path d="M270 431 V459" class="arrow"/>
+  <path d="M730 431 V459" class="arrow"/>
+
+  <rect x="70" y="465" width="400" height="68" rx="18" class="mass"/>
+  <text x="270" y="508" text-anchor="middle" class="label">Group-share permutation test</text>
+  <rect x="530" y="465" width="400" height="68" rx="18" class="allocation"/>
+  <text x="730" y="508" text-anchor="middle" class="label">Allocation permutation test</text>
+
+  <path d="M270 533 V565 H500 V588" class="arrow"/>
+  <path d="M730 533 V565 H500 V588" class="arrow"/>
+  <rect x="240" y="594" width="520" height="68" rx="18" class="result"/>
+  <text x="500" y="637" text-anchor="middle" class="label">BH correction and four-state decision</text>
+</svg>

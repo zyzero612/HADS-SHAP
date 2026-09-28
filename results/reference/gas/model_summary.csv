@@ -1,0 +1,4 @@
+Model,Mean balanced accuracy,Correlated groups,Stable,Mass-only,WGAM-only,Mixed,Any WGAM (%),Median allocation effect/null
+XGBoost,0.9856081740391746,25,0,0,0,25,100.0,12.842336917422587
+LightGBM,0.9853545986816388,25,0,1,1,23,96.0,13.380783038310286
+Random Forest,0.9858613141883544,25,0,0,2,23,100.0,11.009712506850985

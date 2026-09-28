@@ -1,0 +1,5 @@
+state,Stable,Mass-only,WGAM-only,Mixed
+Stable,92,5,3,0
+Mass-only,0,97,0,3
+WGAM-only,0,0,94,6
+Mixed,0,0,0,100
